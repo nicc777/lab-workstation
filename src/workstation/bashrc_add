@@ -1,0 +1,7 @@
+
+echo Applying custom configs
+alias ls='/bin/ls -lahrt --color'
+
+echo
+echo Hi `whoami`. you can now use the system
+echo
