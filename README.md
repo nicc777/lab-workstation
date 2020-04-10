@@ -124,6 +124,18 @@ $ kubectl version --client
 Client Version: version.Info{Major:"1", Minor:"18", GitVersion:"v1.18.1", GitCommit:"7879fc12a63337efff607952a323df90cdc7a335", GitTreeState:"clean", BuildDate:"2020-04-08T17:38:50Z", GoVersion:"go1.13.9", Compiler:"gc", Platform:"linux/amd64"}
 ```
 
+## Provide sudo access to certain users
+
+First, use the following commands to add a user to the `sudo` group:
+
+```bash
+$ docker exec -it workstation /bin/bash
+root@bcd12904cb06:/# usermod -aG sudo user01
+root@bcd12904cb06:/# exit
+```
+
+If `user01` was logged in, log out and back in. 
+
 ## Conclusion
 
 I hope this is useful to someone "out there". Let me know if you want to see more features added by logging an issue.

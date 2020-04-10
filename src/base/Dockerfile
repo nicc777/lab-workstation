@@ -4,7 +4,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update
 RUN apt-get upgrade -y
-RUN apt-get install -y python3-pip awscli openssh-server vim git iputils-ping curl tmux
+RUN apt-get install -y python3-pip awscli openssh-server vim git iputils-ping curl tmux sudo
 
 # Issue 1 - add kubectl
 RUN apt-get install -y apt-transport-https gnupg2
