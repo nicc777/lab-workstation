@@ -117,6 +117,13 @@ drwx------ 2 user01 user01 4.0K Apr  8 17:00 .cache
 drwxr-xr-x 1 user01 user01 4.0K Apr  8 17:00 .
 ```
 
+Get the version of the `kubectl` client:
+
+```bash
+$ kubectl version --client
+Client Version: version.Info{Major:"1", Minor:"18", GitVersion:"v1.18.1", GitCommit:"7879fc12a63337efff607952a323df90cdc7a335", GitTreeState:"clean", BuildDate:"2020-04-08T17:38:50Z", GoVersion:"go1.13.9", Compiler:"gc", Platform:"linux/amd64"}
+```
+
 ## Conclusion
 
 I hope this is useful to someone "out there". Let me know if you want to see more features added by logging an issue.
